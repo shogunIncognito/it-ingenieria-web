@@ -1,0 +1,22 @@
+---
+import logo from '../assets/logo.png'
+import { routes } from '../helpers/data'
+const path = Astro.url.pathname
+---
+<header>
+    <nav class="p-5 w-full flex bg-white justify-center items-center">
+        <img src={logo.src} alt="logo" class="w-56">
+        <ul class="flex w-full justify-end">
+            {routes.map(route => (
+                <li>
+                    <a 
+                    href={route.url} 
+                    class={`${route.url === path ? 'bg-gray-700/30' : ''} hover:bg-gray-800/30 transition-all rounded p-3 px-3`}
+                    >
+                        {route.label}
+                    </a>
+                </li>                
+            ))}
+        </ul>
+    </nav>
+</header>
