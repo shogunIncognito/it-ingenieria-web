@@ -1,44 +1,29 @@
 ---
 import logo from '../assets/logo.png'
+import MobileNav from './MobileNav'
 import { routes } from '../helpers/data'
+import './Navbar.css'
+
 const path = Astro.url.pathname
 ---
 <header>
     <nav class="p-5 w-full flex flex-row-reverse lg:flex-row bg-white justify-end lg:justify-center items-center">
-        <a href="/" class="lg:w-auto w-full flex justify-center lg:block"><img src={logo.src} alt="logo" class="w-56 self-center"></a>
+        <a href="/" class="self-center mx-auto flex justify-center lg:block"><img src={logo.src} alt="logo" class="w-56 self-center"></a>
         <!-- desktop -->
-        <ul class="lg:flex hidden flex-col lg:flex-row w-full justify-end">
+        <ul class="lg:flex items-center hidden flex-row gap-1 w-full justify-end">
             {routes.map(route => (
-                <li>
+                <li class={`link-animated ${route.url === path ? 'link-animated-selected' : ''}`}>
                     <a 
                     href={route.url} 
-                    class={`${route.url === path ? 'bg-gray-700/30' : ''} hover:bg-gray-800/30 transition-all rounded p-3 px-3`}
+                    class='text-center flex border-2 border-transparent transition-all rounded py-2 px-2'
                     >
                         {route.label}
                     </a>
-                </li>                
+                </li>    
             ))}
         </ul>
 
         <!-- mobile -->
-        <div class="lg:hidden relative">
-            <button class="group">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute bottom-0" fill="none" viewBox="0 0 24 24" stroke="black">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-                <ul class="group-hover:grid hidden z-50 absolute  grid-cols-2 top-12 bg-slate-100 shadow-md rounded p-3 w-max transition-all">
-                    {routes.map(route => (
-                        <li class="p-3">
-                            <a 
-                            href={route.url} 
-                            class={`${route.url === path ? 'border-b-4 border-blue-400 rounded' : ''} hover:bg-gray-800/30 p-3 transition-all`}
-                            >
-                                {route.label}
-                            </a>
-                        </li>                
-                    ))}
-                </ul>
-            </button>
-        </div>
+        <MobileNav client:visible path={path} routes={routes}/>
     </nav>
 </header>

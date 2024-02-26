@@ -1,0 +1,20 @@
+.link-animated:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px rgb(194, 43, 43);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.link-animated:hover:after {
+    transform: scaleX(1);
+    border-color:#5c5b5b;
+}
+
+.link-animated-selected:after {
+    transform: scaleX(1);
+}
+
+.link-animated:after {
+    transform-origin: 0% 50%;
+}
