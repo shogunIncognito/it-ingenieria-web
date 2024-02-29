@@ -1,55 +1,77 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import productImg from '../assets/webb.jpg'
+import Layout from "../layouts/Layout.astro";
+import productImg from "../assets/webb.jpg";
 ---
 
 <Layout title="Ingenieria IT">
-	<main>
-        <section class="relative h-[87dvh]">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Fixed_Tilt_Solar_panel_at_Canterbury_Municipal_Building_Canterbury_New_Hampshire.jpg"
-                alt="hero" class="absolute top-0 object-cover -z-10 h-[87dvh] w-full">
-            <div class="bg-black/60 z-20 absolute top-0 w-full h-[87dvh]"></div>
+    <section class="relative h-[87dvh]">
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Fixed_Tilt_Solar_panel_at_Canterbury_Municipal_Building_Canterbury_New_Hampshire.jpg"
+            alt="hero"
+            class="absolute top-0 object-cover -z-10 h-[87dvh] w-full"
+        />
+        <div class="bg-black/60 z-20 absolute top-0 w-full h-[87dvh]"></div>
 
-            <div class="w-full h-[87dvh] text-center pb-10 absolute flex justify-center items-center text-white z-30">
-                <h2 class="text-4xl">Productos tecnologicos de alta calidad</h2>
-            </div>
-        </section>
+        <div
+            class="w-full h-[87dvh] text-center pb-10 absolute flex justify-center items-center text-white z-30"
+        >
+            <h2 class="text-4xl">Productos tecnologicos de alta calidad</h2>
+        </div>
+    </section>
 
-        <section class="grid md:grid-cols-3 gap-8 place-content-center m-14">
-            <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
-                <img src={productImg.src} alt="card" class="w-max rounded">
-                <p class="my-4 p-1 text-lg">Producto tecnologico</p>
-            </article>
-            <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
-                <img src={productImg.src} alt="card" class="w-max rounded">
-                <p class="my-4 p-1 text-lg">Producto tecnologico</p>
-            </article>
-            <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
-                <img src={productImg.src} alt="card" class="w-max rounded">
-                <p class="my-4 p-1 text-lg">Producto tecnologico</p>
-            </article>
-        </section>
+    <section class="grid md:grid-cols-3 gap-8 place-content-center m-14">
+        <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
+            <img src={productImg.src} alt="card" class="w-max rounded" />
+            <p class="my-4 p-1 text-lg">Producto tecnologico</p>
+        </article>
+        <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
+            <img src={productImg.src} alt="card" class="w-max rounded" />
+            <p class="my-4 p-1 text-lg">Producto tecnologico</p>
+        </article>
+        <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
+            <img src={productImg.src} alt="card" class="w-max rounded" />
+            <p class="my-4 p-1 text-lg">Producto tecnologico</p>
+        </article>
+    </section>
 
-        <section class="bg-gray-200 py-12 my-6">
-            <div class="container mx-auto px-8">
-                <h2 class="text-3xl font-bold text-center mb-8">Conoce los beneficios de paneles solares</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <img alt="Tecnología 5G" class="w-full rounded" height="300"
-                        src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/05/programacion-kotlin.jpg?tf=3840x"
-                        style="aspect-ratio: 500/300,
-                  ;object-fit: cover" width=" 500" />
-                    <div class="flex flex-col justify-center">
-                        <p class="text-lg mb-4">
-                            Descubre cómo la tecnología de redes informáticas está transformando la manera en que nos comunicamos y accedemos a la información en tiempo real.
-                        </p>
-                        <ul class="list-disc list-inside">
-                            <li>Velocidades de conexión ultrarrápidas para transferencia de datos instantánea</li>
-                            <li>Mayor ancho de banda que permite la conexión de más dispositivos simultáneamente</li>
-                            <li>Reducción significativa de la latencia para experiencias en tiempo real, como videoconferencias y juegos en línea</li>
-                        </ul>
-                    </div>
+    <section class="bg-gray-200 py-12 my-6">
+        <div class="container mx-auto px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Conoce los beneficios de paneles solares
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <img
+                    alt="Tecnología 5G"
+                    class="w-full rounded"
+                    height="300"
+                    src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/05/programacion-kotlin.jpg?tf=3840x"
+                    style="aspect-ratio: 500/300,
+                  ;object-fit: cover"
+                    width=" 500"
+                />
+                <div class="flex flex-col justify-center">
+                    <p class="text-lg mb-4">
+                        Descubre cómo la tecnología de redes informáticas está
+                        transformando la manera en que nos comunicamos y
+                        accedemos a la información en tiempo real.
+                    </p>
+                    <ul class="list-disc list-inside">
+                        <li>
+                            Velocidades de conexión ultrarrápidas para
+                            transferencia de datos instantánea
+                        </li>
+                        <li>
+                            Mayor ancho de banda que permite la conexión de más
+                            dispositivos simultáneamente
+                        </li>
+                        <li>
+                            Reducción significativa de la latencia para
+                            experiencias en tiempo real, como videoconferencias
+                            y juegos en línea
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 </Layout>
