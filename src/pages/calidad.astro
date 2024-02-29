@@ -1,17 +1,36 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Calidad - Ingenieria IT">
-    <section id="calidad" class="container mx-auto py-8">
+    <section id="calidad" class="container flex flex-col mx-auto py-8">
+        <Image
+            width="800"
+            height="600"
+            class="w-1/2 self-center h-64 object-cover mb-4 rounded"
+            src="https://www.ceupe.com/images/easyblog_articles/1927/b2ap3_amp_calidad-servicio-1.jpg"
+            alt="Calidad en ingeniería IT"
+        />
         <h2 class="text-3xl font-bold mb-4">Calidad</h2>
-        <p class="text-lg mb-4">La calidad es un aspecto fundamental en la ingeniería de tecnologías de la información. Garantizar la calidad en todos los aspectos del desarrollo de software es crucial para obtener productos finales confiables y eficientes.</p>
-        <p class="text-lg mb-4">Algunos aspectos clave de la calidad en ingeniería IT incluyen:</p>
+        <p class="text-lg mb-4">
+            La calidad es un aspecto fundamental en la ingeniería de tecnologías
+            de la información. Garantizar la calidad en todos los aspectos del
+            desarrollo de software es crucial para obtener productos finales
+            confiables y eficientes.
+        </p>
+        <p class="text-lg mb-4">
+            Algunos aspectos clave de la calidad en ingeniería IT incluyen:
+        </p>
         <ul class="list-disc ml-8 mb-4">
             <li>Pruebas exhaustivas de software</li>
             <li>Implementación de estándares de codificación</li>
             <li>Garantía de la usabilidad y accesibilidad</li>
         </ul>
-        <p class="text-lg mb-4">Además, la gestión de la calidad implica la evaluación constante de procesos y la búsqueda continua de mejoras para ofrecer productos y servicios de alta calidad.</p>
+        <p class="text-lg mb-4">
+            Además, la gestión de la calidad implica la evaluación constante de
+            procesos y la búsqueda continua de mejoras para ofrecer productos y
+            servicios de alta calidad.
+        </p>
     </section>
 </Layout>
