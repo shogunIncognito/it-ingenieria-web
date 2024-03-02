@@ -1,11 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import productImg from "../assets/webb.jpg";
+import { Image } from "astro:assets";
+import progImg from '../assets/programacion-kotlin.webp'
 ---
 
 <Layout title="Ingenieria IT">
     <section class="relative h-[87dvh]">
-        <img
+        <Image
+            height={200}
+            width={200}
             src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Fixed_Tilt_Solar_panel_at_Canterbury_Municipal_Building_Canterbury_New_Hampshire.jpg"
             alt="hero"
             class="absolute top-0 object-cover -z-10 h-[87dvh] w-full"
@@ -21,15 +25,15 @@ import productImg from "../assets/webb.jpg";
 
     <section class="grid md:grid-cols-3 gap-8 place-content-center m-14">
         <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
-            <img src={productImg.src} alt="card" class="w-max rounded" />
+            <Image src={productImg} alt="card" class="w-max rounded" />
             <p class="my-4 p-1 text-lg">Producto tecnologico</p>
         </article>
         <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
-            <img src={productImg.src} alt="card" class="w-max rounded" />
+            <Image src={productImg} alt="card" class="w-max rounded" />
             <p class="my-4 p-1 text-lg">Producto tecnologico</p>
         </article>
         <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
-            <img src={productImg.src} alt="card" class="w-max rounded" />
+            <Image src={productImg} alt="card" class="w-max rounded" />
             <p class="my-4 p-1 text-lg">Producto tecnologico</p>
         </article>
     </section>
@@ -40,14 +44,10 @@ import productImg from "../assets/webb.jpg";
                 Conoce los beneficios de paneles solares
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <img
-                    alt="Tecnología 5G"
+                <Image
+                    alt="panelimg"
+                    src={progImg}
                     class="w-full rounded"
-                    height="300"
-                    src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/05/programacion-kotlin.jpg?tf=3840x"
-                    style="aspect-ratio: 500/300,
-                  ;object-fit: cover"
-                    width=" 500"
                 />
                 <div class="flex flex-col justify-center">
                     <p class="text-lg mb-4">
@@ -173,7 +173,7 @@ import productImg from "../assets/webb.jpg";
                     <p
                         class="text-center text-sm text-gray-500 dark:text-gray-400"
                     >
-                    Experiencias de usuario atractivas para la era digital.
+                        Experiencias de usuario atractivas para la era digital.
                     </p>
                 </div>
             </div>

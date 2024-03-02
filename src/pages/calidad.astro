@@ -4,33 +4,121 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Calidad - Ingenieria IT">
-    <section id="calidad" class="container flex flex-col mx-auto py-8">
-        <Image
-            width="800"
-            height="600"
-            class="w-1/2 self-center h-64 object-cover mb-4 rounded"
-            src="https://www.ceupe.com/images/easyblog_articles/1927/b2ap3_amp_calidad-servicio-1.jpg"
-            alt="Calidad en ingeniería IT"
-        />
-        <h2 class="text-3xl font-bold mb-4">Calidad</h2>
-        <p class="text-lg mb-4">
-            La calidad es un aspecto fundamental en la ingeniería de tecnologías
-            de la información. Garantizar la calidad en todos los aspectos del
-            desarrollo de software es crucial para obtener productos finales
-            confiables y eficientes.
-        </p>
-        <p class="text-lg mb-4">
-            Algunos aspectos clave de la calidad en ingeniería IT incluyen:
-        </p>
-        <ul class="list-disc ml-8 mb-4">
-            <li>Pruebas exhaustivas de software</li>
-            <li>Implementación de estándares de codificación</li>
-            <li>Garantía de la usabilidad y accesibilidad</li>
-        </ul>
-        <p class="text-lg mb-4">
-            Además, la gestión de la calidad implica la evaluación constante de
-            procesos y la búsqueda continua de mejoras para ofrecer productos y
-            servicios de alta calidad.
-        </p>
-    </section>
+    <section class="w-full flex justify-center items-center py-6 space-y-2 md:py-12 lg:space-y-4">
+        <div class="container flex flex-col gap-2 px-4 md:gap-4 lg:gap-8 lg:max-w-6xl">
+          <div class="space-y-2 text-center">
+            <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Calidad</h1>
+            <p class="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              La calidad del software es fundamental para el exito de suproducto. Nuestro enfoque en la
+              calidad garantiza que suaplicacion sea eficiente, fiable y segura.
+            </p>
+          </div>
+          <div class="grid gap-4 md:gap-8 lg:gap-12">
+            <div class="flex flex-col items-center gap-2 text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-10 h-10 m-auto fill-current"
+              >
+                <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"></path>
+                <path d="m7 16.5-4.74-2.85"></path>
+                <path d="m7 16.5 5-3"></path>
+                <path d="M7 16.5v5.17"></path>
+                <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"></path>
+                <path d="m17 16.5-5-3"></path>
+                <path d="m17 16.5 4.74-2.85"></path>
+                <path d="M17 16.5v5.17"></path>
+                <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"></path>
+                <path d="M12 8 7.26 5.15"></path>
+                <path d="m12 8 4.74-2.85"></path>
+                <path d="M12 13.5V8"></path>
+              </svg>
+              <div class="space-y-2">
+                <h3 class="text-lg font-bold">Eficiencia</h3>
+                <p class="text-sm text-gray-500 md:text-base dark:text-gray-400">
+                  Mejoramos el rendimiento de su aplicacion para unaexperiencia mas rapida.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-10 h-10 m-auto fill-current"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <div class="space-y-2">
+                <h3 class="text-lg font-bold">Fiabilidad</h3>
+                <p class="text-sm text-gray-500 md:text-base dark:text-gray-400">
+                  Probamos a fondo para garantizar que su aplicacionfuncione sin problemas.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-10 h-10 m-auto fill-current"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <div class="space-y-2">
+                <h3 class="text-lg font-bold">Seguridad</h3>
+                <p class="text-sm text-gray-500 md:text-base dark:text-gray-400">
+                  Protegemos los datos y la privacidad de sus usuarioscon las ultimas practicas de
+                  seguridad.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-2 text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-10 h-10 m-auto fill-current"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <polyline points="16 11 18 13 22 9"></polyline>
+              </svg>
+              <div class="space-y-2">
+                <h3 class="text-lg font-bold">Usabilidad</h3>
+                <p class="text-sm text-gray-500 md:text-base dark:text-gray-400">
+                  Diseñamos interfaces intuitivas para una experiencia de usuario excepcional.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 </Layout>

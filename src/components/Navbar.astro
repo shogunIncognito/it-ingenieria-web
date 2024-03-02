@@ -1,29 +1,44 @@
 ---
-import logo from '../assets/logo.png'
-import MobileNav from './MobileNav'
-import { routes } from '../helpers/data'
-import './Navbar.css'
+import logo from "../assets/logo.png";
+import MobileNav from "./MobileNav";
+import { routes } from "../helpers/data";
+import "./Navbar.css";
+import { Image } from "astro:assets";
 
-const path = Astro.url.pathname
+const path = Astro.url.pathname;
 ---
+
 <header>
-    <nav class="p-5 w-full flex flex-row-reverse lg:flex-row bg-white justify-end lg:justify-center items-center">
-        <a href="/" class="self-center mx-auto flex justify-center lg:block"><img src={logo.src} alt="logo" class="w-56 self-center"></a>
+    <nav
+        class="p-5 w-full flex flex-row-reverse lg:flex-row bg-white justify-end lg:justify-center items-center"
+    >
+        <a href="/" class="self-center mx-auto flex justify-center lg:block">
+            <Image src={logo} width={224} height={224} alt="logo" class="self-center" />
+        </a>
         <!-- desktop -->
-        <ul class="lg:flex items-center hidden flex-row gap-1 w-full justify-end">
-            {routes.map(route => (
-                <li class={`link-animated ${route.url === path ? 'link-animated-selected' : ''}`}>
-                    <a 
-                    href={route.url} 
-                    class='text-center flex border-2 border-transparent transition-all rounded py-2 px-2'
+        <ul
+            class="lg:flex items-center hidden flex-row gap-1 w-full justify-end"
+        >
+            {
+                routes.map((route) => (
+                    <li
+                        class:list={[
+                            "link-animated",
+                            { "link-animated-selected": route.url === path },
+                        ]}
                     >
-                        {route.label}
-                    </a>
-                </li>    
-            ))}
+                        <a
+                            href={route.url}
+                            class="text-center flex border-2 border-transparent transition-all rounded py-2 px-2"
+                        >
+                            {route.label}
+                        </a>
+                    </li>
+                ))
+            }
         </ul>
 
         <!-- mobile -->
-        <MobileNav client:visible path={path} routes={routes}/>
+        <MobileNav client:visible path={path} routes={routes} />
     </nav>
 </header>

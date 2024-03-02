@@ -1,17 +1,96 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+import mantenimientoimg from "../assets/mantenimientosoft.jpg";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Mantenimiento - Ingenieria IT">
-    <section id="mantenimiento" class="container mx-auto py-8">
-        <h2 class="text-3xl font-bold mb-4">Mantenimiento</h2>
-        <p class="text-lg mb-4">El mantenimiento de sistemas y software es crucial para garantizar su funcionamiento óptimo y seguridad a lo largo del tiempo.</p>
-        <p class="text-lg mb-4">Algunos aspectos importantes del mantenimiento en ingeniería IT son:</p>
-        <ul class="list-disc ml-8 mb-4">
-            <li>Actualizaciones de software</li>
-            <li>Resolución de problemas y errores</li>
-            <li>Optimización de rendimiento</li>
-        </ul>
-        <p class="text-lg mb-4">El mantenimiento proactivo puede ayudar a prevenir problemas antes de que ocurran, reduciendo costos y tiempos de inactividad.</p>
+    <div class="grid gap-6 lg:gap-12 mx-10 mt-5">
+        <div class="space-y-2 text-center">
+            <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl">
+                Mantenimiento y Soporte
+            </h1>
+            <p
+                class="mt-3 text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400"
+            >
+                Mantenimiento proactivo y soporte experto para mantener sus
+                sistemas funcionando sin problemas. Nuestro equipo se dedica a
+                garantizar la seguridad, confiabilidad y rendimiento de su
+                infraestructura, para que pueda centrarse en la innovación.
+            </p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-3">
+            <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                <h3 class="text-2xl font-bold text-center">
+                    Actualizaciones de Software
+                </h3>
+                <p
+                    class="max-w-[800px] text-gray-500 md:text-base/relaxed xl:text-base/relaxed dark:text-gray-400 text-center"
+                >
+                    Manténgase al día con las últimas funciones y parches de
+                    seguridad. Nosotros gestionaremos el proceso de
+                    actualización para minimizar interrupciones y garantizar la
+                    compatibilidad.
+                </p>
+            </div>
+            <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                <h3 class="text-2xl font-bold text-center">
+                    Resolución de Problemas y Corrección de Errores
+                </h3>
+                <p
+                    class="max-w-[800px] text-gray-500 md:text-base/relaxed xl:text-base/relaxed dark:text-gray-400 text-center"
+                >
+                    Respuesta rápida a problemas con diagnóstico y resolución
+                    expertos. Identificaremos y corregiremos errores para
+                    mantener sus sistemas funcionando sin problemas.
+                </p>
+            </div>
+            <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                <h3 class="text-2xl font-bold text-center">
+                    Optimización del Rendimiento
+                </h3>
+                <p
+                    class="max-w-[800px] text-gray-500 md:text-base/relaxed xl:text-base/relaxed dark:text-gray-400 text-center"
+                >
+                    Ajustes para velocidad y eficiencia. Nuestras estrategias de
+                    optimización ayudarán a que sus sistemas funcionen al
+                    máximo, mejorando la experiencia del usuario y la
+                    productividad.
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="py-12 md:py-24 lg:py-32 flex justify-center items-center">
+        <div class="container px-4 md:px-6">
+            <div class="flex md:flex-row flex-col w-full justify-center items-center gap-10">
+                <div class="space-y-4">
+                    <h2 class="text-3xl font-bold tracking-tighter md:text-4xl">
+                        Importancia del Mantenimiento en el Software
+                    </h2>
+                    <p
+                        class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                    >
+                        El mantenimiento del software es crucial para garantizar
+                        que sus sistemas sigan funcionando de manera óptima y
+                        segura. Sin un mantenimiento adecuado, los sistemas
+                        pueden volverse vulnerables a errores, fallos de
+                        seguridad y un rendimiento deficiente. Nuestros
+                        servicios de mantenimiento y soporte están diseñados
+                        para abordar estos desafíos y asegurar que su
+                        infraestructura tecnológica esté siempre en las mejores
+                        condiciones.
+                    </p>
+                </div>
+                <div>
+                    <Image
+                        src={mantenimientoimg}
+                        width="550"
+                        height="310"
+                        alt="Software Maintenance"
+                        class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
+                    />
+                </div>
+            </div>
+        </div>
     </section>
 </Layout>
