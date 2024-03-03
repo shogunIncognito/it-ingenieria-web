@@ -1,17 +1,161 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import panelsolarimg from '../assets/panelsolar.jpg'
+import { Image } from "astro:assets"
 ---
 
 <Layout title="Sistemas solares - Ingenieria IT">
-    <section id="sistemas-solares" class="container mx-auto py-8">
-        <h2 class="text-3xl font-bold mb-4">Sistemas Solares</h2>
-        <p class="text-lg mb-4">Los sistemas solares en ingeniería IT se refieren a la implementación y gestión de sistemas informáticos basados en energía solar.</p>
-        <p class="text-lg mb-4">Algunos aspectos relevantes de los sistemas solares incluyen:</p>
-        <ul class="list-disc ml-8 mb-4">
-            <li>Uso de paneles solares para alimentar servidores y dispositivos</li>
-            <li>Optimización de la eficiencia energética</li>
-            <li>Impacto ambiental y sostenibilidad</li>
-        </ul>
-        <p class="text-lg mb-4">La implementación de sistemas solares en ingeniería IT es una forma de reducir la huella de carbono y promover prácticas empresariales sostenibles.</p>
-    </section>
+    <div class="w-full flex flex-col justify-center items-center py-12 lg:py-16 xl:py-24">
+        <div class="container grid items-start gap-4 px-4 py-3 md:px-6 lg:gap-8 lg:grid-cols-2 xl:gap-12">
+          <div class="flex flex-col justify-center space-y-4">
+            <div class="space-y-2">
+              <div class="space-y-2">
+                <div class="inline-block rounded-lg bg-gray-100 px-3 py-2 mb-2 text-sm dark:bg-gray-800">Paneles solares</div>
+                <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl">Energía sostenible con paneles solares</h1>
+                <p class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  Aproveche la energía del sol con nuestra gama de paneles solares de alta eficiencia. Reduzca su huella
+                  de carbono y ahorre en costos de energía con una solución sostenible y respetuosa con el medio ambiente.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto grid max-w-sm items-start gap-4 sm:max-w-4xl sm:grid-cols-2 md:gap-8 lg:max-w-5xl lg:grid-cols-3">
+            <div class="grid gap-1">
+              <h3 class="text-lg font-bold">Eficiencia comprobada</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Nuestros paneles solares utilizan la última tecnología para garantizar una conversión máxima de la luz
+                solar en energía utilizable.
+              </p>
+            </div>
+            <div class="grid gap-1">
+              <h3 class="text-lg font-bold">Variedad de opciones de montaje</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Ya sea en el techo o en el suelo, tenemos soluciones de montaje versátiles para adaptarse a sus
+                necesidades.
+              </p>
+            </div>
+            <div class="grid gap-1">
+              <h3 class="text-lg font-bold">Diseño resistente a la intemperie</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Los paneles están diseñados para soportar condiciones climáticas adversas, lo que los hace ideales para
+                diversas ubicaciones.
+              </p>
+            </div>
+            <div class="grid gap-1">
+              <h3 class="text-lg font-bold">Generación de energía constante</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Con nuestros paneles, puede esperar un rendimiento confiable y constante a lo largo de su vida útil.
+              </p>
+            </div>
+            <div class="grid gap-1">
+              <h3 class="text-lg font-bold">Opciones de almacenamiento</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Explore nuestras soluciones de baterías para almacenar el exceso de energía y usarla cuando más lo
+                necesite.
+              </p>
+            </div>
+            <div class="grid gap-1">
+              <h3 class="text-lg font-bold">Instalación sin complicaciones</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Nuestro equipo profesional se encargará de la instalación, lo que le brinda tranquilidad y comodidad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex flex-col justify-center items-center border-t">
+          <div class="container my-10 grid items-center gap-8 px-4 py-8 md:px-6 md:grid-cols-2 lg:gap-12 xl:gap-16">
+            <div class="space-y-4">
+              <h2 class="text-2xl font-bold tracking-tight md:text-3xl">Tipos de paneles solares</h2>
+              <p class="text-gray-500 md:text-xl dark:text-gray-400">
+                Ofrecemos una variedad de opciones para adaptarse a sus requisitos de espacio y presupuesto. Desde paneles
+                monocristalinos elegantes y eficientes hasta paneles policristalinos de alto rendimiento, tenemos la
+                solución perfecta para su hogar o empresa.
+              </p>
+            </div>
+            <div class="flex items-center justify-center">
+              <Image
+                src={panelsolarimg}
+                width="600"
+                height="400"
+                alt="Tipos de paneles solares"
+                class="rounded-lg object-cover"
+                style="aspect-ratio: 600 / 400; object-fit: cover;"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="w-full py-12 lg:py-16 flex flex-col justify-center items-center">
+          <div class="container grid items-start gap-8 px-4 md:px-6">
+            <div class="space-y-4">
+              <h2 class="text-3xl font-bold tracking-tight md:text-5xl">Beneficios de los paneles solares</h2>
+              <p class="text-gray-500 md:text-xl dark:text-gray-400">
+                Los paneles solares no solo le permiten aprovechar la energía renovable, sino que también ofrecen una
+                serie de ventajas tangibles. Aquí hay algunos de los principales beneficios de invertir en energía solar:
+              </p>
+              <ul class="grid gap-4 list-disc pl-4 md:grid-cols-2">
+                <li>
+                  <span class="font-semibold">Ahorro de costos:</span> Reduzca su factura de electricidad y genere ahorros
+                  a largo plazo al producir su propia energía.
+                </li>
+                <li>
+                  <span class="font-semibold">Huella ecológica:</span> Al optar por la energía solar, está contribuyendo a
+                  la reducción de las emisiones de carbono y al uso de fuentes de energía limpias y sostenibles.
+                </li>
+                <li>
+                  <span class="font-semibold">Independencia energética:</span>
+                  Con la energía solar, puede ser autosuficiente y no depender completamente de la red eléctrica.
+                </li>
+                <li>
+                  <span class="font-semibold">Valor de la propiedad:</span> Los sistemas de energía solar pueden aumentar
+                  el valor de su hogar o propiedad comercial.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-full py-12 lg:py-16 flex flex-col justify-center items-center">
+          <div class="container grid items-start gap-8 px-4 md:px-6">
+            <div class="space-y-4">
+              <h2 class="text-3xl font-bold tracking-tight md:text-5xl">Preguntas frecuentes sobre paneles solares</h2>
+              <p class="text-gray-500 md:text-xl dark:text-gray-400">
+                Aquí hay algunas preguntas comunes que la gente tiene sobre la energía solar y los paneles solares. Si
+                tiene alguna otra pregunta, no dude en ponerse en contacto con nuestro equipo.
+              </p>
+              <dl class="grid gap-8 md:grid-cols-2">
+                <div class="space-y-2">
+                  <dt class="font-semibold">¿Cómo funcionan los paneles solares?</dt>
+                  <dd class="text-sm text-gray-500 md:text-base dark:text-gray-400">
+                    Los paneles solares contienen celdas fotovoltaicas que convierten la luz solar en electricidad. Cuando
+                    los rayos solares golpean los paneles, los electrones en las celdas se activan, creando corriente
+                    eléctrica.
+                  </dd>
+                </div>
+                <div class="space-y-2">
+                  <dt class="font-semibold">¿Cuánto tiempo duran los paneles solares?</dt>
+                  <dd class="text-sm text-gray-500 md:text-base dark:text-gray-400">
+                    La mayoría de los paneles solares vienen con una garantía de rendimiento de 25 años, lo que significa
+                    que seguirán generando electricidad a un alto nivel durante al menos un cuarto de siglo.
+                  </dd>
+                </div>
+                <div class="space-y-2">
+                  <dt class="font-semibold">¿Necesito baterías con mis paneles solares?</dt>
+                  <dd class="text-sm text-gray-500 md:text-base dark:text-gray-400">
+                    No es necesario tener baterías con su sistema de paneles solares si está conectado a la red eléctrica.
+                    Los paneles solares pueden generar electricidad durante el día, que se puede utilizar directamente en
+                    su hogar.
+                  </dd>
+                </div>
+                <div class="space-y-2">
+                  <dt class="font-semibold">¿Cuánto espacio necesito para instalar paneles solares en mi techo?</dt>
+                  <dd class="text-sm text-gray-500 md:text-base dark:text-gray-400">
+                    La cantidad de espacio que necesitará para instalar paneles solares depende de la cantidad de
+                    electricidad que desea generar y la eficiencia de sus paneles. Un instalador profesional puede
+                    ayudarlo a determinar la mejor ubicación y el tamaño óptimo del sistema.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>        
+      </div>
 </Layout>
