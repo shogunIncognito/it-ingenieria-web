@@ -1,17 +1,322 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import exampleimg from '../assets/redes.webp'
 ---
 
 <Layout title="Seguridad - Ingenieria IT">
-    <section id="seguridad" class="container mx-auto py-8">
-        <h2 class="text-3xl font-bold mb-4">Seguridad</h2>
-        <p class="text-lg mb-4">La seguridad de la información es un aspecto crítico en la ingeniería de tecnologías de la información.</p>
-        <p class="text-lg mb-4">Algunos temas importantes en seguridad informática son:</p>
-        <ul class="list-disc ml-8 mb-4">
-            <li>Gestión de riesgos y vulnerabilidades</li>
-            <li>Seguridad de la red y del sistema</li>
-            <li>Cifrado de datos y autenticación</li>
-        </ul>
-        <p class="text-lg mb-4">La implementación de prácticas y medidas de seguridad adecuadas es fundamental para proteger la información confidencial y garantizar la integridad de los sistemas.</p>
+    <div class="pt-8 lg:pt-16 flex flex-col justify-center items-center xl:pt-24">
+        <div
+            class="container flex justify-center items-center grid-in-container lg:grid-cols-12 gap-8 lg:gap-16 px-4 md:px-6"
+        >
+            <div
+                class="space-y-6 lg:col-start-2 lg:col-span-5 lg:space-y-8 xl:col-start-3 xl:col-span-6"
+            >
+                <div class="space-y-2">
+                    <div
+                        class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
+                    >
+                        Servicios
+                    </div>
+                    <h1
+                        class="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl"
+                    >
+                        Seguridad y Cumplimiento
+                    </h1>
+                </div>
+                <p class="text-xl text-gray-500 xl:w-4/5 dark:text-gray-400">
+                    Protege tu negocio con nuestras soluciones de seguridad
+                    integrales. Desde seguridad de red hasta gestión de
+                    cumplimiento, te tenemos cubierto.
+                </p>
+            </div>
+            <div
+                class="flex items-center justify-center lg:col-start-8 lg:col-span-5 xl:col-start-9 xl:col-span-4"
+            >
+                <Image
+                    src={exampleimg}
+                    width="800"
+                    height="600"
+                    alt="Hero"
+                    class="rounded-lg object-cover object-center"
+                />
+            </div>
+        </div>
+    </div>
+    <section class="py-12 lg:py-24 flex justify-center items-center">
+        <div class="container grid-in-container px-4 md:px-6">
+            <div class="grid gap-8 lg:grid-cols-2 lg:gap-12">
+                <div class="flex flex-col justify-center space-y-4">
+                    <div class="space-y-2">
+                        <div
+                            class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
+                        >
+                            Introducción
+                        </div>
+                        <h2
+                            class="text-3xl font-bold tracking-tighter sm:text-5xl"
+                        >
+                            La Importancia de la Seguridad
+                        </h2>
+                    </div>
+                    <p
+                        class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                    >
+                        En el mundo digital actual, la seguridad es primordial.
+                        El aumento de las amenazas cibernéticas ha hecho
+                        esencial que las empresas protejan sus datos, sistemas y
+                        redes. Medidas de seguridad inadecuadas pueden llevar a
+                        violaciones de datos, pérdidas financieras y daños a la
+                        reputación de una organización. En IT Ingenieria,
+                        entendemos la importancia de la seguridad en la era
+                        digital. Nuestro equipo de expertos está dedicado a
+                        ayudar a las empresas a implementar medidas de seguridad
+                        sólidas para proteger sus activos y mitigar los riesgos
+                        asociados con las amenazas cibernéticas.
+                    </p>
+                </div>
+                <div class="grid items-start gap-8">
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold">Instalación de Redes</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Nuestros servicios de instalación de redes están
+                            diseñados para garantizar que la infraestructura de
+                            red de tu organización sea segura y confiable.
+                            Utilizamos las últimas tecnologías y mejores
+                            prácticas para configurar redes seguras y de alto
+                            rendimiento que puedan satisfacer las necesidades de
+                            tu negocio.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold">Diseño de Software</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Nuestros servicios de diseño de software incluyen la
+                            implementación de las mejores prácticas de seguridad
+                            para garantizar que el software que desarrollamos
+                            sea seguro y resistente contra amenazas
+                            cibernéticas. Seguimos un ciclo de vida de
+                            desarrollo de software seguro para identificar y
+                            mitigar vulnerabilidades de seguridad en el
+                            software.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold">Licencias</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Ayudamos a las organizaciones a gestionar sus
+                            licencias de software para garantizar el
+                            cumplimiento de los acuerdos de licencia y evitar
+                            problemas legales. Nuestros servicios de licencias
+                            incluyen la implementación de medidas de seguridad
+                            para proteger los activos de software de la
+                            organización contra la piratería y el uso no
+                            autorizado.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold">Paneles Solares</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Además de los servicios anteriores, también
+                            ofrecemos servicios de consultoría de seguridad para
+                            ayudar a las organizaciones a evaluar su postura de
+                            seguridad, identificar vulnerabilidades y
+                            desarrollar estrategias de mejora de seguridad.
+                            Nuestro equipo de expertos en seguridad tiene el
+                            conocimiento y la experiencia para abordar los
+                            desafíos de seguridad en evolución que enfrentan las
+                            empresas modernas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="border-t flex justify-center items-center">
+        <div class="container grid-in-container py-12 md:py-24 px-4 md:px-6">
+            <div class="grid gap-4 lg:grid-cols-2 lg:gap-8">
+                <div class="flex flex-col justify-center space-y-4">
+                    <div class="space-y-2">
+                        <div
+                            class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
+                        >
+                            Medidas de Seguridad
+                        </div>
+                        <h2
+                            class="text-3xl font-bold tracking-tighter sm:text-5xl"
+                        >
+                            Garantizando tu Seguridad
+                        </h2>
+                    </div>
+                    <p
+                        class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                    >
+                        En IT Ingenieria, adoptamos un enfoque proactivo hacia
+                        la seguridad. Implementamos medidas de seguridad sólidas
+                        para proteger tus datos e infraestructura de amenazas
+                        cibernéticas. Nuestras medidas de seguridad incluyen el
+                        uso de cifrado para asegurar la transmisión de datos,
+                        autenticación multifactor para prevenir el acceso no
+                        autorizado y auditorías de seguridad regulares para
+                        identificar y abordar posibles vulnerabilidades. Estamos
+                        comprometidos a garantizar la seguridad e integridad de
+                        tus activos digitales.
+                    </p>
+                </div>
+                <div class="grid items-start gap-8">
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold">Instalación de Redes</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Nuestros servicios de instalación de redes están
+                            diseñados para garantizar que la infraestructura de
+                            red de tu organización sea segura y confiable.
+                            Utilizamos las últimas tecnologías y mejores
+                            prácticas para configurar redes seguras y de alto
+                            rendimiento que pueden satisfacer las necesidades de
+                            tu negocio.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold">Diseño de Software</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Nuestros servicios de diseño de software incluyen la
+                            implementación de las mejores prácticas de seguridad
+                            para garantizar que el software que desarrollamos
+                            sea seguro y resistente contra amenazas
+                            cibernéticas. Seguimos un ciclo de vida de
+                            desarrollo de software seguro para identificar y
+                            mitigar vulnerabilidades de seguridad en el
+                            software.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold">Licencias</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Ayudamos a las organizaciones a gestionar sus
+                            licencias de software para garantizar el
+                            cumplimiento de los acuerdos de licencia y evitar
+                            problemas legales. Nuestros servicios de licencias
+                            incluyen la implementación de medidas de seguridad
+                            para proteger los activos de software de la
+                            organización contra la piratería y el uso no
+                            autorizado.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-bold">Paneles Solares</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                            Además de los servicios anteriores, también
+                            ofrecemos servicios de consultoría de seguridad para
+                            ayudar a las organizaciones a evaluar su postura de
+                            seguridad, identificar vulnerabilidades y
+                            desarrollar estrategias de mejora de seguridad.
+                            Nuestro equipo de expertos en seguridad tiene el
+                            conocimiento y la experiencia para abordar los
+                            desafíos de seguridad en evolución que enfrentan las
+                            empresas modernas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 lg:py-24 flex justify-center items-center">
+        <div class="container grid-in-container px-4 md:px-6">
+            <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+                <div class="space-y-2">
+                    <div
+                        class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
+                    >
+                        Estudios de Caso
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                        Ejemplos del Mundo Real
+                    </h2>
+                    <p
+                        class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                    >
+                        Nuestras medidas de seguridad han sido puestas a prueba
+                        en escenarios del mundo real, y hemos demostrado nuestra
+                        capacidad para proteger los datos e infraestructura de
+                        nuestros clientes de amenazas cibernéticas. Aquí tienes
+                        algunos de nuestros estudios de caso que demuestran la
+                        efectividad de nuestras soluciones de seguridad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 lg:py-24 flex justify-center items-center">
+        <div class="container grid-in-container px-4 md:px-6">
+            <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+                <div class="space-y-2">
+                    <div
+                        class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
+                    >
+                        Testimonios
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                        Confiado por Nuestros Clientes
+                    </h2>
+                </div>
+                <div class="max-w-3xl text-center space-y-4">
+                    <p
+                        class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                    >
+                        "IT Ingenieria ha sido fundamental para ayudarnos a
+                        mejorar nuestra postura de seguridad. Su experiencia y
+                        dedicación para proteger nuestros datos nos han dado la
+                        confianza para centrarnos en nuestro negocio sin
+                        preocuparnos por las amenazas cibernéticas. Recomendamos
+                        encarecidamente sus servicios a cualquier organización
+                        que busque fortalecer su seguridad."
+                    </p>
+                    <div class="text-gray-500 dark:text-gray-400">
+                        ― Jane Doe, CEO de Soluciones Seguras
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="border-t py-12 lg:py-24 flex justify-center items-center">
+        <div class="container grid-in-container px-4 md:px-6">
+            <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+                <div class="space-y-2">
+                    <div
+                        class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
+                    >
+                        Contáctanos
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                        ¿Listo para Empezar?
+                    </h2>
+                    <p
+                        class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                    >
+                        Contáctanos para obtener más información sobre nuestros
+                        servicios de seguridad y cómo podemos ayudarte a
+                        proteger tu negocio de amenazas cibernéticas.
+                    </p>
+                </div>
+                <div class="max-w-sm w-full mx-auto space-y-4">
+                    <input
+                        type="text"
+                        placeholder="Ingresa tu correo electrónico"
+                        class="w-full border-gray-200 placeholder-gray-400 peer h-11 rounded-md px-4 border focus:outline-none focus:ring-1 focus:ring-gray-950 dark:peer-border-gray-800 dark:peer-placeholder-gray-600 dark:border-gray-800 dark:focus:ring-gray-300"
+                    />
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                    >
+                        Suscribirse
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
 </Layout>

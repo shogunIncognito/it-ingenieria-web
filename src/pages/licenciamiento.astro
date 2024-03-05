@@ -1,17 +1,271 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Licenciamiento - Ingenieria IT">
-    <section id="licenciamiento" class="container mx-auto py-8">
-        <h2 class="text-3xl font-bold mb-4">Licenciamiento</h2>
-        <p class="text-lg mb-4">El licenciamiento de software es un aspecto crítico en la ingeniería de tecnologías de la información.</p>
-        <p class="text-lg mb-4">Algunos temas relacionados con el licenciamiento incluyen:</p>
-        <ul class="list-disc ml-8 mb-4">
-            <li>Tipos de licencias de software</li>
-            <li>Regulaciones y cumplimiento legal</li>
-            <li>Gestión de activos de software (SAM)</li>
-        </ul>
-        <p class="text-lg mb-4">Es importante para las empresas entender y cumplir con las políticas de licenciamiento para evitar problemas legales y financieros en el futuro.</p>
-    </section>
+    <div
+        class="rounded-lg border bg-card text-card-foreground shadow-sm"
+        data-v0-t="card"
+    >
+        <div class="flex flex-col space-y-1.5 p-6 pb-0">
+            <div>Licenciamiento</div>
+            <div class="mt-2">
+                Información sobre las licencias de software utilizadas en la
+                plataforma.
+            </div>
+        </div>
+        <div class="p-6 space-y-6">
+            <div class="border-t border-gray-200 pt-6 dark:border-gray-800">
+                <div class="grid items-start gap-2">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="rounded-full bg-gray-100 w-8 h-8 dark:bg-gray-800"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="w-4 h-4 rounded-full offset-2"
+                            >
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9 9.35a4 4 0 1 1 0 5.3"></path>
+                            </svg>
+                        </div>
+                        <div class="grid gap-1">
+                            <div>Licencias de código abierto</div>
+                            <div class="text-sm">
+                                Las licencias de código abierto permiten el
+                                acceso al código fuente y su modificación, lo
+                                que fomenta la colaboración y la transparencia.
+                                Sin embargo, algunas licencias pueden tener
+                                requisitos específicos, como la distribución del
+                                código fuente o la inclusión de la licencia
+                                original.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="rounded-full bg-gray-100 w-8 h-8 dark:bg-gray-800"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="w-4 h-4 rounded-full offset-2"
+                            >
+                                <path
+                                    d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"
+                                ></path>
+                                <path d="M17 18h1"></path>
+                                <path d="M12 18h1"></path>
+                                <path d="M7 18h1"></path>
+                            </svg>
+                        </div>
+                        <div class="grid gap-1">
+                            <div>Licencias comerciales</div>
+                            <div class="text-sm">
+                                Las licencias comerciales suelen requerir el
+                                pago de una tarifa y pueden imponer
+                                restricciones sobre el uso del software, como
+                                limitaciones en el número de usuarios o la
+                                prohibición de la ingeniería inversa. Estas
+                                licencias suelen ofrecer soporte y
+                                actualizaciones por parte del proveedor.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="rounded-full bg-gray-100 w-8 h-8 dark:bg-gray-800"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="w-4 h-4 rounded-full offset-2"
+                            >
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="grid gap-1">
+                            <div>Licencias de evaluación</div>
+                            <div class="text-sm">
+                                Las licencias de evaluación permiten a los
+                                usuarios probar el software antes de realizar
+                                una compra. Suelen tener una duración limitada y
+                                pueden incluir todas las funciones del software.
+                                Al final del período de evaluación, el usuario
+                                debe adquirir una licencia completa para seguir
+                                utilizando el software.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 grid gap-2">
+                <a
+                    class="inline-flex items-center space-x-2 text-sm font-medium
+          transition-colors rounded-md hover:bg-gray-50 px-2 py-1
+          dark:hover:bg-gray-800"
+                    href="#"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-4 h-4"
+                    >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9 9.35a4 4 0 1 1 0 5.3"></path>
+                    </svg>
+                    <span>Ver detalles de la licencia de código abierto</span>
+                </a>
+                <a
+                    class="inline-flex items-center space-x-2 text-sm font-medium
+          transition-colors rounded-md hover:bg-gray-50 px-2 py-1
+          dark:hover:bg-gray-800"
+                    href="#"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-4 h-4"
+                    >
+                        <path
+                            d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"
+                        ></path>
+                        <path d="M17 18h1"></path>
+                        <path d="M12 18h1"></path>
+                        <path d="M7 18h1"></path>
+                    </svg>
+                    <span
+                        >Obtener información sobre las licencias comerciales</span
+                    >
+                </a>
+                <a
+                    class="inline-flex items-center space-x-2 text-sm font-medium
+          transition-colors rounded-md hover:bg-gray-50 px-2 py-1
+          dark:hover:bg-gray-800"
+                    href="#"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-4 h-4"
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span
+                        >Consultar las condiciones de la licencia de evaluación</span
+                    >
+                </a>
+            </div>
+            <div
+                class="mt-6 border-t border-gray-200 pt-6 dark:border-gray-800"
+            >
+                <form class="grid gap-4 md:grid-cols-2">
+                    <div class="grid gap-1">
+                        <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="name"
+                        >
+                            Nombre completo
+                        </label>
+                        <input
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="name"
+                            required=""
+                        />
+                    </div>
+                    <div class="grid gap-1">
+                        <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="email"
+                        >
+                            Correo electrónico
+                        </label>
+                        <input
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="email"
+                            required=""
+                            type="email"
+                        />
+                    </div>
+                    <div class="grid gap-1 md:col-start-2 md:row-start-1">
+                        <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="company"
+                        >
+                            Nombre de la empresa
+                        </label>
+                        <input
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="company"
+                        />
+                    </div>
+                    <div class="grid gap-1">
+                        <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="message"
+                        >
+                            Mensaje
+                        </label>
+                        <textarea
+                            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="message"
+                            required=""></textarea>
+                    </div>
+                    <div
+                        class="flex flex-col gap-2 md:col-start-1 md:col-span-2"
+                    >
+                        <button
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-[auto]"
+                            type="submit"
+                        >
+                            Enviar solicitud
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </Layout>

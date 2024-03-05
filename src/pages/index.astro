@@ -4,6 +4,8 @@ import productImg from "../assets/webb.jpg";
 import { Image } from "astro:assets";
 import progImg from "../assets/programacion-kotlin.webp";
 import panelimg from "../assets/panelindex.png";
+import cardimg1 from '../assets/redes.webp'
+import cardimg2 from '../assets/mantenimientosoft.jpg'
 ---
 
 <Layout title="Ingenieria IT">
@@ -24,18 +26,18 @@ import panelimg from "../assets/panelindex.png";
         </div>
     </section>
 
-    <section class="grid md:grid-cols-3 gap-8 place-content-center m-14">
+    <section class="grid md:grid-cols-3 gap-8 text-center place-content-center m-14">
         <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
-            <Image src={productImg} alt="card" class="w-max rounded" />
-            <p class="my-4 p-1 text-lg">Producto tecnologico</p>
+            <Image src={cardimg1} alt="card" class="w-full h-72 rounded" />
+            <p class="my-4 p-1 text-lg">Mantenimiento y servicio de Servidores y redes</p>
         </article>
         <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
-            <Image src={productImg} alt="card" class="w-max rounded" />
-            <p class="my-4 p-1 text-lg">Producto tecnologico</p>
+            <Image src={productImg} alt="card" class="w-full h-72 rounded" />
+            <p class="my-4 p-1 text-lg">Desarrollo web a medida</p>
         </article>
         <article class="flex flex-col gap-2 bg-slate-100 shadow-lg p-5">
-            <Image src={productImg} alt="card" class="w-max rounded" />
-            <p class="my-4 p-1 text-lg">Producto tecnologico</p>
+            <Image src={cardimg2} alt="card" class="w-full h-72 rounded" />
+            <p class="my-4 p-1 text-lg">Mantenimiento de software</p>
         </article>
     </section>
 
